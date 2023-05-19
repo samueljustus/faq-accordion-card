@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:  hsl(273, 75%, 66%);
+    height: 100%;
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+#container {
+    height: 70vh;
+    width: 70%;
+    background: hsl(0, 0%, 100%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+
+}
+
+/* splits the screen into half */
+
+.split {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+
+}
+
+
+/* left part */
+
+.left {
+    left: 0;
+    position: fixed;
+    left: -80px;
+    top: 60px;
+}
+
+/* right part */
+
+.right {
+    right: 0;
+
+}
+
+h1 {
+    padding-top: 40px;
+    font-weight: 1200;
+    font-size: 1.5rem;
+
+}
+
+#questions .accordion-container {
+    position: relative;
+    margin-top: 30px;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.accordion:hover {
+    color: hsl(14, 88%, 65%)
+}
+
+.answer {
+    position: relative;
+    height: 0;
+    text-align: justify;
+    max-width: 80%;
+    padding-top: 10px;
+    overflow: hidden;
+    font-size: 12px;
+    border-bottom: 1px solid grey;
+    transition: 0.5s;
+
+}
+
+.active .answer {
+    padding-top: 10px;
+    height: 70px;
+    
+}
+
+.active .accordion {
+    font-weight: 900;   
+}
+
+.active span {
+    transform: rotate(180deg);
+}
+
+
+
+/* Media queries */
+
+@media for only screen()
+
