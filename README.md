@@ -20,6 +20,7 @@ Users should be able to:
 - Hide/Show the answer to a question when the question is clicked
 
 # Links
+https://samueljustus.github.io/faq-accordion-card/ - link to the accordion card faq site
 
 # my-process
 i started with using html to give it a basic structure then i added css to style the accordion card then i went
